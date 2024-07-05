@@ -21,6 +21,9 @@ dependencies:
   cupertino_icons: ^1.0.6
   easy_localization: ^3.0.7
 
+  #Utility
+  easy_logger: ^0.0.2
+  logger: ^2.3.0
 
 # dependency_overrides:
   widgets:
