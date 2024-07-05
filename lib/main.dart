@@ -1,6 +1,7 @@
 import 'package:architecture_template/feature/home/view/home_view.dart';
 import 'package:architecture_template/product/init/application_initialize.dart';
 import 'package:architecture_template/product/init/product_localization.dart';
+import 'package:architecture_template/product/init/theme/index.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -19,11 +20,9 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
+      theme: CustomLightTheme().themeData,
+      darkTheme: CustomDarkTheme().themeData,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
       home: const HomeView(),
     );
   }

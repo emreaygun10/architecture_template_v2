@@ -11,19 +11,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
   #Core Dependencies
-  kartal: ^4.0.4
-  vexana: ^4.0.4
+  cupertino_icons: ^1.0.6
   equatable: ^2.0.5
+  
+  #State
+
+  #Config
   json_annotation: ^4.9.0
   envied: ^0.5.4+1
-  cupertino_icons: ^1.0.6
   easy_localization: ^3.0.7
 
   #Utility
   easy_logger: ^0.0.2
   logger: ^2.3.0
+  kartal: ^4.0.4
+  google_fonts: ^6.2.1
+
+  #Network
+  vexana: ^4.0.4
 
 # dependency_overrides:
   widgets:
@@ -36,6 +42,7 @@ dev_dependencies:
   flutter_gen_runner: ^5.6.0
   flutter_launcher_icons: ^0.13.1
   very_good_analysis: ^6.0.0
+  envied_generator: ^0.5.4+1
 
 flutter_launcher_icons:
   android: "launcher_icon"
