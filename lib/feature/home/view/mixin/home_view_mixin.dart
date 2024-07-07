@@ -1,6 +1,7 @@
 import 'package:architecture_template/feature/home/view/home_view.dart';
 import 'package:architecture_template/product/navigation/app_router.dart';
 import 'package:architecture_template/product/service/manager/product_network_manager.dart';
+import 'package:architecture_template/product/state/container/product_state_items.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ mixin HomeViewMixin on State<HomeView> {
   @override
   void initState() {
     super.initState();
-    productNetworkManager = ProductNetworkManager.base();
+    productNetworkManager = ProductStateItems.productNetworkManager;
     productNetworkManager.listenErrorState(
       onErrorStatus: (value) {
         context.router.push(HomeRoute());
