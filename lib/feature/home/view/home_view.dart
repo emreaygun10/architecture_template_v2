@@ -26,8 +26,8 @@ class _HomeViewState extends BaseState<HomeView> with HomeViewMixin {
       floatingActionButton: FloatingActionButton(onPressed: () {
         SuccessDialog.show(title: 'Success Dialog', context: context);
       }),
-      appBar: _HomeAppBar(),
-      body: Container(
+      appBar: const _HomeAppBar(),
+      body: SizedBox(
         height: context.sized.height,
         width: context.sized.width,
         child: Column(
@@ -39,7 +39,7 @@ class _HomeViewState extends BaseState<HomeView> with HomeViewMixin {
                 productViewModel.changeThemeMode(ThemeMode.dark);
               },
               child: const Text(LocaleKeys.general_buttons_save).tr(),
-            )
+            ),
           ],
         ),
       ),
