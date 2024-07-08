@@ -1,6 +1,6 @@
-import 'package:architecture_template/feature/home/view/mixin/home_view_mixin.dart';
+import 'package:architecture_template/feature/home/view_model/mixin/home_view_mixin.dart';
 import 'package:architecture_template/product/init/language/locale_keys.g.dart';
-import 'package:architecture_template/product/navigation/app_router.dart';
+import 'package:architecture_template/product/state/base/base_state.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -18,10 +18,11 @@ final class HomeView extends StatefulWidget {
   State<HomeView> createState() => _HomeViewState();
 }
 
-class _HomeViewState extends State<HomeView> with HomeViewMixin {
+class _HomeViewState extends BaseState<HomeView> with HomeViewMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       floatingActionButton: FloatingActionButton(onPressed: () {
         SuccessDialog.show(title: 'Success Dialog', context: context);
       }),
@@ -35,7 +36,7 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
             Assets.lotties.kupa.toGetLottie(),
             ElevatedButton(
               onPressed: () {
-                context.router.push(HomeDetailRoute(id: 'emre'));
+                productViewModel.changeThemeMode(ThemeMode.dark);
               },
               child: const Text(LocaleKeys.general_buttons_save).tr(),
             )

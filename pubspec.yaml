@@ -16,6 +16,7 @@ dependencies:
   equatable: ^2.0.5
   
   #State
+  flutter_bloc: ^8.1.6
 
   #Config
   easy_localization: ^3.0.7

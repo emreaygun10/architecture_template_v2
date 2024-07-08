@@ -1,4 +1,5 @@
 import 'package:architecture_template/product/service/manager/product_network_manager.dart';
+import 'package:architecture_template/product/state/view_model/product_view_model.dart';
 import 'package:get_it/get_it.dart';
 
 final class ProductContainer {
@@ -8,7 +9,8 @@ final class ProductContainer {
   /// use singleton pattern setup
   static void setup() {
     _getIt
-        .registerSingleton<ProductNetworkManager>(ProductNetworkManager.base());
+      ..registerSingleton<ProductNetworkManager>(ProductNetworkManager.base())
+      ..registerLazySingleton<ProductViewModel>(ProductViewModel.new);
   }
 
   /// Read your dependency item for [ProductContainer]

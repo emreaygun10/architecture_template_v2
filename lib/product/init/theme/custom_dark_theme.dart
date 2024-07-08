@@ -7,7 +7,7 @@ final class CustomDarkTheme implements CustomTheme {
   @override
   ThemeData get themeData => ThemeData(
         useMaterial3: true,
-        colorScheme: CustomColorScheme.lightScheme,
+        colorScheme: CustomColorScheme.darkScheme,
         fontFamily: GoogleFonts.roboto().fontFamily,
         floatingActionButtonTheme: floatingActionButtonThemeData,
       );

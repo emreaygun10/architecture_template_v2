@@ -9,10 +9,11 @@ final class ProductLocalization extends EasyLocalization {
     required super.child,
     super.key,
   }) : super(
-            supportedLocales: _supportedLocales,
-            path: _translationPath,
-            useOnlyLangCode: true,
-            startLocale: Locales.en.locale);
+          supportedLocales: _supportedLocales,
+          path: _translationPath,
+          useOnlyLangCode: true,
+          startLocale: Locales.en.locale,
+        );
 
   static final List<Locale> _supportedLocales = [
     Locales.tr.locale,
