@@ -43,6 +43,9 @@ dependencies:
 
   common:
     path: module/common
+  
+  core:
+    path: module/core
 
 dev_dependencies:
   build_runner: ^2.4.11
