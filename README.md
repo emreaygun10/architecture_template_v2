@@ -1,16 +1,3 @@
 # architecture_template
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+I have developed a modular and testable Flutter template utilizing the MVVM (Model-View-ViewModel) architecture. This template is designed to enhance maintainability and scalability of Flutter applications by promoting clean separation of concerns and testability. The foundation of this template is based on the resources provided at [GitHub - VB10](https://github.com/VB10), which offer a solid reference for implementing modular architecture and best practices in Flutter development.
